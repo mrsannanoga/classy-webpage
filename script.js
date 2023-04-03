@@ -41,9 +41,17 @@ const exploreButton = document.querySelector('.cta-sec');
 exploreButton.addEventListener('click', () => {
   
     const exploreSection = document.getElementById('explore');
-
-
     exploreSection.scrollIntoView({ behavior: 'smooth' });
 
   });
   
+
+const contactButton = document.querySelector('.cta-main');
+
+contactButton.addEventListener('click', () => {
+    
+    const contactSection = document.getElementById('contact');
+    contactSection.scrollIntoView({ behavior: 'smooth' });
+  
+    });
+    
