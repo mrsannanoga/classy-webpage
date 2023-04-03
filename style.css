@@ -5,32 +5,33 @@
 }
 html{
     font-family: "Poppins", sans-serif;
-    overflow-x: hidden;}
+    overflow-x: hidden;
+}
 
 
 :root{
-    --main-color: rgb(239, 172, 90);
-    --secondary-color: #1b1b1b;
+    --main-color: #c6c6fa;
+    --secondary-color: #1e1847;
 }
-@font-face {
-    font-family: "orgonite";
-    src: url("./assets/stone\ orgonite.woff");
-}
+
 
 section{
     padding: 5%;
 }
 
 h2{
+    font-family: 'Righteous', cursive;
     font-size: 2.5rem;
     line-height: 125%;
     padding: 1rem 0rem;
 }
 h3{
+    font-family: 'Righteous', cursive;
     font-size: 1.25rem;
     line-height: 125%;
 }
 nav{
+    font-family: 'Righteous', cursive;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -66,9 +67,9 @@ nav svg{
 }
 
 .logo h1{
+    font-family: 'Righteous', cursive;
     margin-left: 0.5rem;
     font-size: 1rem;
-    font-family: "orgonite", sans-serif;
 }
 
 .logo img{
@@ -77,12 +78,14 @@ nav svg{
 
 .front-page{
     min-height: 100vh;
-    color: white;
+    color: white; 
+   
 }
+
 
 .selling-point{
     margin-top: 25vh;
-    font-family: "orgonite", sans-serif;
+    font-family: 'Righteous', cursive;    
     text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.499);
     text-align: center;
 }
@@ -99,7 +102,7 @@ nav svg{
     font-size: 1rem;
     border: none;
     border-radius: 0.5rem;
-    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.499);
+    box-shadow: 0px 7px 20px rgba(255, 255, 255, 0.93);
     margin: 1rem;
 
 }
@@ -157,7 +160,7 @@ nav svg{
 }
 
 .about h2{
-    font-family: "orgonite", sans-serif;
+    font-family: 'Righteous', cursive;
     text-align: center;
 }
 
@@ -169,4 +172,50 @@ nav svg{
 .about img{
     width: 100%;
     margin-top: 2rem;
+}
+
+.signature{
+    font-family: 'Nothing You Could Do', cursive;
+    text-align: end;
+    padding-top: 1rem;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background: linear-gradient(to bottom, #fff , var(--secondary-color));
+    color: white;
+    font-size: 12px;
+    padding: 20px;
+    text-align: center;
+}
+footer a{
+    color: white;
+    font-size: 1rem;
+}
+@media screen and (min-width: 768px){
+    
+    .videos{
+        display: flex;
+        flex-direction: column;
+        gap:2rem;
+        width: 70%;
+    }
+    .classes{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .about{
+        display: flex;
+        gap:5rem;
+        justify-content: space-between;
+    }
+    .about img{
+        width: 50%;
+    }
+    .about h2{
+        text-align: start;
+    }
 }
