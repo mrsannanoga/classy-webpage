@@ -1,102 +1,109 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     font-family: "Poppins", sans-serif;
     overflow-x: hidden;
 }
 
-:root{
+:root {
     --main-color: #c6c6fa;
     --secondary-color: #1e1847;
 }
 
 
-section{
+section {
     padding: 5%;
 }
 
-h2{
+h2 {
     font-family: 'Righteous', cursive;
     font-size: 3.25rem;
     line-height: 125%;
     padding: 1rem 0rem;
 }
-h3{
+
+h3 {
     font-family: 'Righteous', cursive;
     font-size: 1.25rem;
     line-height: 125%;
 }
-nav{
+
+nav {
     font-family: 'Righteous', cursive;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-nav svg{
+nav svg {
     cursor: pointer;
     z-index: 10;
 }
-.links{
-   position: absolute;
-   background: white;
-   width: 100%;
-   height: 100vh;
-   left: 0;
-   top: 0;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: space-evenly;
-   transform: translateX(100%);
+
+.links {
+    position: absolute;
+    background: white;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: translateX(100%);
 
 }
-.links a{
+
+.links a {
     color: var(--secondary-color);
     font-size: 2rem;
     text-decoration: none;
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
 }
 
-.logo h1{
+.logo h1 {
     font-family: 'Righteous', cursive;
     margin-left: 0.5rem;
     font-size: 1rem;
 }
 
-.logo img{
+.logo img {
     width: 1.5rem;
 }
 
-.front-page{
+.front-page {
     min-height: 100vh;
-    color: white; 
-   
+    color: white;
+
 }
 
 
-.selling-point{
+.selling-point {
     margin-top: 25vh;
-    font-family: 'Righteous', cursive;    
+    font-family: 'Righteous', cursive;
     text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.499);
     text-align: center;
 }
 
-.selling-point h3{
+.selling-point h3 {
     font-family: sans-serif;
     text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.499);
 }
-.ctas{
+
+.ctas {
     margin-top: 2rem;
 }
-.ctas button{
+
+.ctas button {
     padding: 1rem;
     font-size: 1rem;
     border: none;
@@ -106,18 +113,19 @@ nav svg{
     cursor: pointer;
 
 }
-.cta-main{
+
+.cta-main {
     background-color: var(--main-color);
     color: var(--secondary-color);
-    
+
 }
 
-.cta-sec{
+.cta-sec {
     background-color: var(--secondary-color);
     color: white;
 }
 
-.hero{
+.hero {
     position: absolute;
     left: 0;
     top: 0;
@@ -125,16 +133,16 @@ nav svg{
     height: 100vh;
     object-fit: cover;
     z-index: -1;
-    
+
 }
 
-.services{
+.services {
     color: var(--secondary-color);
     text-align: center;
     font-family: "orgonite", sans-serif;
 }
 
-.videos video{
+.videos video {
     width: 100%;
     border-radius: 1rem;
     margin-top: 1rem;
@@ -142,83 +150,108 @@ nav svg{
 
 .beat,
 .mix,
-.studio{
+.studio {
     position: relative;
 }
-.videos h3{
+
+.videos h3 {
     position: absolute;
     color: var(--main-color);
     text-shadow: 0px 2px 12px rgba(0, 0, 0, 0.383);
     bottom: 10%;
     left: 50%;
-    transform: translate(-50%, -10%); /*makes the h3 exactly in the middle of video */
+    transform: translate(-50%, -10%);
+    /*makes the h3 exactly in the middle of video */
     font-size: 2rem;
 }
 
-.about{
+.about {
     color: var(--secondary-color);
 
 }
 
-.about h2{
+.about h2 {
     font-family: 'Righteous', cursive;
     text-align: center;
 }
 
-.about p{
+.about p {
     line-height: 150%;
     font-size: 1.2rem;
 }
 
-.about img{
+.about img {
     width: 100%;
     margin-top: 2rem;
     box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.383);
 }
 
-.signature{
+.signature {
     font-family: 'Nothing You Could Do', cursive;
     text-align: end;
     padding-top: 1rem;
 }
 
-footer{
+.contactus {
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem 5rem;
+}
+
+.icons i {
+    font-size: 3rem;
+    cursor: pointer;
+    color: #3F288D;
+    text-shadow:0px 3px 6px #5963a4}
+
+footer {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    background: linear-gradient(to bottom, #fff , var(--secondary-color));
+    background: linear-gradient(to bottom, #fff, var(--secondary-color));
     color: white;
     font-size: 12px;
     padding: 20px;
     text-align: center;
 }
-footer a{
+
+footer a {
     color: white;
     font-size: 1rem;
 }
-@media screen and (min-width: 768px){
-    
-    .videos{
+
+@media screen and (min-width: 768px) {
+
+    .videos {
         display: flex;
-        gap:2rem;
+        gap: 2rem;
     }
-    .videos video{
+
+    .videos video {
         width: 20rem;
     }
-    .services{
+
+    .services {
         display: flex;
         align-items: center;
         flex-direction: column;
     }
-    .about{
+
+    .about {
         display: flex;
-        gap:5rem;
+        gap: 5rem;
         justify-content: space-between;
     }
-    .about img{
+
+    .about img {
         width: 40%;
     }
-    .about h2{
+
+    .about h2 {
         text-align: start;
     }
 }
