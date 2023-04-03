@@ -12,7 +12,7 @@ burger.addEventListener("click", () => {
         gsap.fromTo(".links a", 
         {opacity:0, y:0},
         {opacity:1, y:20, delay:0.25, stagger:0.15 });
-        gsap.set("html", {overflow: "hidden"});
+        gsap.set("html", {overflowX: "hidden"});
     }
     burger.classList.toggle("active")
 });
@@ -25,7 +25,6 @@ videos.forEach((video) => {
         trigger: video,
         start: "top center",
         end: "bottom center",
-        markers: true,
         onEnter: () => {
             gsap.to(video, {opacity: 1});
             video.play();
@@ -37,20 +36,15 @@ videos.forEach((video) => {
 });
 
 
-const exploreBtn = document.getElementsByClassName('cta-sec');
-const contactBtn = document.getElementsByClassName('cta-main');
+const exploreButton = document.querySelector('.cta-sec');
 
-
-exploreBtn.addEventListener('click', () => {
+exploreButton.addEventListener('click', () => {
   
-    const servicesSection = document.getElementsByClassName('classes');
+    const exploreSection = document.getElementById('explore');
 
 
-  const servicesOffset = servicesSection.offsetTop;
+    exploreSection.scrollIntoView({ behavior: 'smooth' });
+    video.play();
 
-  window.scrollTo({
-    top: servicesOffset,
-    behavior: 'smooth'
-  });
   });
   

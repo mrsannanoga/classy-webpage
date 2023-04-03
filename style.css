@@ -5,9 +5,8 @@
 }
 html{
     font-family: "Poppins", sans-serif;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
-
 
 :root{
     --main-color: #c6c6fa;
@@ -104,6 +103,7 @@ nav svg{
     border-radius: 0.5rem;
     box-shadow: 0px 7px 20px rgba(255, 255, 255, 0.93);
     margin: 1rem;
+    cursor: pointer;
 
 }
 .cta-main{
@@ -198,9 +198,10 @@ footer a{
     
     .videos{
         display: flex;
-        flex-direction: column;
         gap:2rem;
-        width: 70%;
+    }
+    .videos video{
+        width: 20rem;
     }
     .classes{
         display: flex;
@@ -213,7 +214,7 @@ footer a{
         justify-content: space-between;
     }
     .about img{
-        width: 50%;
+        width: 40%;
     }
     .about h2{
         text-align: start;
