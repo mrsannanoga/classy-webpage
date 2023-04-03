@@ -12,7 +12,7 @@ burger.addEventListener("click", () => {
         gsap.fromTo(".links a", 
         {opacity:0, y:0},
         {opacity:1, y:20, delay:0.25, stagger:0.15 });
-        gsap.set("html", {overflowX: "hidden"});
+        gsap.set("html", {overflow: "hidden"});
     }
     burger.classList.toggle("active")
 });
