@@ -85,7 +85,7 @@ nav svg{
 .selling-point{
     margin-top: 25vh;
     font-family: 'Righteous', cursive;    
-    text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.499);
+    text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.499);
     text-align: center;
 }
 
@@ -125,6 +125,7 @@ nav svg{
     height: 100vh;
     object-fit: cover;
     z-index: -1;
+    
 }
 
 .classes{
@@ -172,6 +173,7 @@ nav svg{
 .about img{
     width: 100%;
     margin-top: 2rem;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.383);
 }
 
 .signature{

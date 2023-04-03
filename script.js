@@ -29,9 +29,9 @@ videos.forEach((video) => {
             gsap.to(video, {opacity: 1});
             video.play();
         },
-        onEnterBack: () => video.play(),
-        onLeave: () => video.pause(),
-        onLeaveBack: () => video.pause(),
+        // onEnterBack: () => video.play(),
+        // onLeave: () => video.pause(),
+        // onLeaveBack: () => video.pause(),
     });
 });
 
@@ -44,7 +44,6 @@ exploreButton.addEventListener('click', () => {
 
 
     exploreSection.scrollIntoView({ behavior: 'smooth' });
-    video.play();
 
   });
   
